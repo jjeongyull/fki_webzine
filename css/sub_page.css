@@ -512,6 +512,11 @@ ul .swiper-txt p{
   font-weight: 400;
   color: #757575;
 }
+.sub-top-deco{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
 /* 반응형 */
 @media screen and (max-width: 1200px) {
