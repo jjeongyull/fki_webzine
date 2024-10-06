@@ -1,5 +1,14 @@
-$(document).on('click', '#btn_menu_toggle', function(){
+$(document).on('click', '#btn_menu_toggle', function(e){
   $('#side_menu').addClass('open');
+  e.stopPropagation();
+});
+$(document).on('click', function(e) {
+  let sideMenu = $('#side_menu');
+  
+  // 메뉴가 열려있고, 클릭한 요소가 메뉴 영역이 아닐 때 메뉴 닫기
+  if (sideMenu.hasClass('open') && !$(e.target).closest('#side_menu').length) {
+    sideMenu.removeClass('open');
+  }
 });
 $(document).on('click', '#close_menu', function(){
   $('#side_menu').removeClass('open');
@@ -17,4 +26,8 @@ $(document).on('click', '.has-submenu', function(e){
     $(this).next('.submenu').addClass('open');
     $(this).addClass('active');
   }
+});
+$(document).on('click', '#floating a:eq(1)', function(e){
+  e.preventDefault(); // 기본 동작 막기
+  $('html, body').animate({ scrollTop: 0 }, 1000); // 3초 동안 맨 위로 이동
 });

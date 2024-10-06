@@ -21,6 +21,17 @@
 .menu-div {
   position: relative;
 }
+header{
+  border-bottom: 1px solid #e1e1e1;
+  background: #fff;
+}
+header.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
 
 /* 메뉴 아이콘 */
 .menu-toggle-btn{
@@ -102,6 +113,15 @@
   display: block;
 }
 
+.floating{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* footer */
 footer {
   background-color: #F5F5F5;
@@ -165,8 +185,32 @@ footer {
     padding-right: 15px;
   }
 }
-@media screen and (max-width: 600PX) {
+@media screen and (max-width: 720px) {
   .side-menu {
     width: 70%;
+  }
+  .side-bar-a{
+    font-size: var(--text-size-16);
+    padding: 10px 20px;
+  }
+  .submenu-a{
+    font-size: var(--text-size-14);
+    padding: 10px 0;
+  }
+  .menu-toggle-btn{
+    width: 35px;
+    height: 35px;
+  }
+  .main-header{
+    height: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .side-menu {
+    width: 70%;
+  }
+  .footer-info{
+    flex-direction: column;
+    gap: 10px;
   }
 }
