@@ -27,6 +27,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  width: 100%;
 }
 .main-banner-text p{
   color: #FFFFFF;
@@ -122,8 +123,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #0060B0;
 }
 .main-3-div-inner img{
   width: 100%;
@@ -131,12 +131,24 @@
 .main-3-div-inner ul{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  padding-bottom: 40px;
+  width: 100%;
 }
 .main-3-div-inner a{
   font-size: var(--text-size-24);
   font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  color: #0060B0;
+}
+.main-3-div-inner a:hover{
+
+  background-color: #0060B0;
+  color: #fff;
+}
+.main-3-div-inner a.r-b{
+  border-right: 1px solid #0060B0;
 }
 .main-3-div-box{
   width: 100%;
@@ -251,12 +263,20 @@
   }
   .main-3-div-inner ul{
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding-bottom: 20px;
   }
-  .main-3-div-inner{
-    gap: 20px;
+  .main-3-div-inner ul a{
+    padding: 20px 0;
   }
+  .main-3-div-inner ul a.r-b{
+    border-right: 0;
+  }
+  .main-3-div-inner ul a.m-r-b{
+    border-right: 1px solid #0060B0;
+  }
+  .main-3-div-inner ul a.m-b-b{
+    border-bottom: 1px solid #0060B0;
+  }
+
   .main-2-div-box-text-1 {
     font-size: var(--text-size-18);
   }
