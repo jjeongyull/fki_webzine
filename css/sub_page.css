@@ -62,7 +62,9 @@
   margin-bottom: 50px;
 }
 .div-content-mb{
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #0060B0;
 }
 
 /* 공통 컴포넌트 */
@@ -99,6 +101,13 @@
   display: flex;
   align-items: center;
   gap: 40px;
+}
+.img-info-div.gap-none{
+
+  gap: 0;
+}
+.p-20{
+  padding: 20px;
 }
 .img-info-ing-div{
   display: flex;
@@ -826,7 +835,7 @@ ul .swiper-txt p{
 }
 .head-box-inner-box{
   width: 100%;
-  padding: 32px;
+  padding: 27.5px;
   border: 1px solid #B2B2B2;
 }
 .head-box-title{

@@ -180,6 +180,12 @@
   height: 100%;
 }
 
+.main-5-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -201,6 +207,12 @@
   height: 300px;
   object-fit: cover;
   object-position: left;
+}
+
+@media screen and (max-width: 960px) {
+  .main-5-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -253,5 +265,8 @@
   }
   .main-4-div-inner{
     flex-direction: column;
+  }
+  .main-5-grid{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
