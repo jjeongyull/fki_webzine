@@ -16,7 +16,7 @@
 .h-sub-logo{
   text-align: center;
   font-weight: 700;
-  line-height:1.3;
+  font-size: var(--text-size-18);
 }
 .logo-img {
   width: 150px;
