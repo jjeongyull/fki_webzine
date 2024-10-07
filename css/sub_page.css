@@ -3,7 +3,9 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
+.w-240{
+  width: 240px;
+}
 /* 서브페이지 배너 */
 .sub-banner{
   width: 100%;
@@ -986,6 +988,12 @@ ul .swiper-txt p{
   } 
 }
 @media screen and (max-width: 720px) {
+  .img-info-list{
+    width: 100%;
+  }
+  .img-info-list ul{
+    width: 100%;
+  }
   .section-body {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1025,6 +1033,10 @@ ul .swiper-txt p{
   .img-info-list li{
     font-size: var(--text-size-14);
     line-height: 1.5;
+    width: 100%;
+  }
+  .img-info-div{
+    width:100%;
   }
   .gold-line-box{
     padding: 20px;
