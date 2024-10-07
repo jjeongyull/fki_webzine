@@ -117,6 +117,7 @@
 }
 .img-info-p{
   font-size: var(--text-size-12);
+  word-break: keep-all;
 }
 .img-info-long-text{
   font-size: var(--text-size-24);
