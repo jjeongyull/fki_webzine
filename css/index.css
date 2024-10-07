@@ -91,14 +91,17 @@
   overflow: hidden;
   position: relative;
   transition: 0.3s;
+  height: 300px;
+  overflow: hidden;
 }
 .main-2-div-box:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .main-2-div-box img{
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-  width: 100%;
+  width: 600px;
+  height: 100%;
 }
 .main-2-div-box-text{
   position: absolute;
@@ -156,16 +159,16 @@
   gap: 20px;
 }
 .bg-1{
-  background-image: url(../images/sub_50/main_banner.jpg);
+  background-image: url(../images/main/main_01.jpg);
 }
 .bg-2{
-  background-image: url(../images/sub_51/main_banner.jpg);
+  background-image: url(../images/main/main_02.jpg);
 }
 .bg-3{
-  background-image: url(../images/sub_52/main_banner.jpg);
+  background-image: url(../images/main/main_03.jpg);
 }
 .bg-4{
-  background-image: url(../images/sub_53/main_banner.jpg);
+  background-image: url(../images/main/main_04.jpg);
 }
 .main-4-div-inner .main-2-div-box-text{
   top: 20px;
@@ -201,6 +204,12 @@
 }
 
 @media screen and (max-width: 720px) {
+  .main-2-div-box img{
+    width: 100%;
+  }
+  .main-2-div-box{
+    height: 230px;
+  }
   .main-banner-text p{
     width: 100%;
     font-size: var(--text-size-18);
