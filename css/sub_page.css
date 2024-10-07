@@ -6,6 +6,9 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.m-view{
+  display: none;
+}
 .w-240{
   width: 240px;
 }
@@ -1166,6 +1169,12 @@ ul .swiper-txt p{
   .m-100{
     width: 100%;
   } 
+  .w-view{
+    display: none;
+  }
+  .m-view{
+    display: block;
+  }
 }
 @media screen and (max-width: 250px) {
   .m-100{
