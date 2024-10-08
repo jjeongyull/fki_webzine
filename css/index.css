@@ -29,9 +29,12 @@
   z-index: 2;
   width: 100%;
 }
+.slide-p{
+  font-size: var(--text-size-24);
+}
 .main-banner-text p{
   color: #FFFFFF;
-  font-size: var(--text-size-32);
+  font-size: var(--text-size-40);
   text-align: center;
 }
 .b-title{

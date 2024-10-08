@@ -27,7 +27,11 @@ $(document).on('click', '.has-submenu', function(e){
     $(this).addClass('active');
   }
 });
-$(document).on('click', '#floating a:eq(1)', function(e){
+$(document).on('click', '#btn_up', function(e){
   e.preventDefault(); // 기본 동작 막기
   $('html, body').animate({ scrollTop: 0 }, 1000); // 3초 동안 맨 위로 이동
+});
+$(document).on('click', '#btn_down', function(e) {
+  e.preventDefault(); // 기본 동작 막기
+  $('html, body').animate({ scrollTop: $(document).height() }, 1000); // 1초 동안 맨 아래로 이동
 });

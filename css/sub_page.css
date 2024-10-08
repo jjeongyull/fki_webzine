@@ -6,6 +6,31 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.w-40{
+  width: 40%;
+}
+.img-link{
+  position: relative;
+}
+.link-img-icon{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #e7e7e7;
+  padding: 8px;
+  border-radius: 40px;
+  right: 15px;
+  bottom: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.img-link:hover .link-img-icon{
+  opacity: 1;
+}
+.link-img-icon img{
+  width: 100% !important;
+  transform: rotate(45deg);
+}
 .m-view{
   display: none;
 }
@@ -121,9 +146,30 @@
   flex-direction: column;
   gap: 10px;
   color: #757575;
+  width: 40%;
+}
+.img-info-ing-div.w-auto{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #757575;
+  width: auto;
+}
+.img-info-ing-div.w-50{
+  width: 50%;
+}
+.img-info-ing-div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #757575;
+  width: 40%;
+}
+.img-info-ing-div.flex-40 img{
+  width: 100%;
 }
 .img-info-p{
-  font-size: var(--text-size-12);
+  font-size: var(--text-size-16);
   word-break: keep-all;
 }
 .img-info-p.f-14{
@@ -133,6 +179,9 @@
   font-size: var(--text-size-24);
   line-height: 1.5;
   color: #0060B0;
+}
+.img-info-long-text.w-60{
+  width: 60%;
 }
 
 /* sub_01 축사 */
@@ -363,7 +412,7 @@
 }
 .swiper-custum-nav {
   display: flex;
-  z-index: 1000;
+  z-index: 1;
 }
 .swiper-custum-nav i {
   font-size: 1.8em;
@@ -490,6 +539,7 @@ ul .swiper-txt p{
 }
 .slide-flex-box img{
   border-radius: 10px;
+  width: 50%;
 }
 
 /* sub_33 세계는 지금 */
@@ -811,8 +861,12 @@ ul .swiper-txt p{
   align-items: flex-start;
   gap: 20px;
 }
+.line-box-info img{
+  width: 330px;
+}
 .line-box-text{
   padding-top: 10px;
+
 }
 .line-box-text-title{
   color: #1E1E1E;
@@ -1009,6 +1063,18 @@ ul .swiper-txt p{
 }
 @media screen and (max-width: 720px) {
   .img-info-list{
+    width: 100%;
+  }
+  .img-info-long-text.w-60{
+    width: 100%;
+  }
+  .img-info-ing-div{
+    width: 50%;
+  }
+  .img-info-div.mo-100{
+    width: 100%;
+  }
+  .img-info-div.mo-100 .img-info-ing-div.flex-40{
     width: 100%;
   }
   .img-info-list ul{
