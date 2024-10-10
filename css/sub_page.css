@@ -1004,7 +1004,9 @@ ul .swiper-txt p{
 .line-box-info.col{
   flex-direction: column;
 }
-
+.mo-view{
+  display: none;
+}
 /* 반응형 */
 @media screen and (max-width: 1200px) {
   .section-body{
@@ -1069,7 +1071,7 @@ ul .swiper-txt p{
     width: 100%;
   }
   .img-info-ing-div{
-    width: 50%;
+    width: 100%;
   }
   .img-info-div.mo-100{
     width: 100%;
@@ -1218,6 +1220,15 @@ ul .swiper-txt p{
   .line-box-info{
     flex-direction: column;
     gap: 10px;
+  }
+  .mo-view{
+    display: block;
+  }
+  .web-view{
+    display: none;
+  }
+  .img-link{
+    width: 100%;
   }
   .line-box-info img{
     width: 100%;
