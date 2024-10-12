@@ -712,7 +712,15 @@ ul .swiper-txt p{
   word-break: keep-all;
 }
 
-/* sub_53 입법 소식 */
+/* sub_53 Brands of Korea */
+.sub-flex-box-w{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sub-flex-box-w img{
+  width: 100%;
+}
 .icon-card-div{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1096,6 +1104,9 @@ ul .swiper-txt p{
   } 
 }
 @media screen and (max-width: 720px) {
+  .sub-flex-box-w{
+    display: block;
+  }
   .img-info-list{
     width: 100%;
   }
