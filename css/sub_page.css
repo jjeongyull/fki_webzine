@@ -230,7 +230,8 @@
 }
 .img-info-list li{
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 18px;
 }
 .sub-text-box-1{
   width: 100%;
@@ -306,6 +307,7 @@
   flex-direction: column;
   gap: 9px;
   font-size: var(--text-size-14);
+  line-height: 1.2;
 }
 
 /* sub_30 이사의 충실의무 확대론 톺아보기 */
@@ -1104,6 +1106,9 @@ ul .swiper-txt p{
   } 
 }
 @media screen and (max-width: 720px) {
+  .img-sub-text{
+    padding: 20px 0;
+  }
   .sub-flex-box-w{
     display: block;
   }
