@@ -25,6 +25,9 @@
 
 .menu-div {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 header{
   border-bottom: 1px solid #e1e1e1;
@@ -47,6 +50,7 @@ header.active{
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  cursor: pointer;
 }
 .menu-toggle-btn img {
   width: 24px;
@@ -240,9 +244,13 @@ footer {
   .menu-toggle-btn{
     width: 35px;
     height: 35px;
+    font-size: 12px;
   }
   .main-header{
     height: 60px;
+  }
+  .menu-div{
+    gap: 3px;
   }
   .h-sub-logo{
     text-align: center;
