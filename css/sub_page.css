@@ -770,6 +770,7 @@ ul .swiper-txt p{
   display: flex;
   align-items: center;
   gap: 60px;
+  justify-content: center;
 }
 .cir-line{
   width: 100px;
